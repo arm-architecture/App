@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+     <img id="django-image" src="{% static 'images/django.png' %}" alt="Django Logo">
+     <script src="{% static 'javascript/script.js' %}"></script>
+{% endblock %}
+
+{% block title %}
+    Greeting Page
+{% endblock %}
+
+{% block body %}
+    <h1>Hello,Barbas!</h1>
+{% endblock %}
